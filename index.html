@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>camp.fm</title>
+<style>
+body {
+    background-color: #000000;
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#parent {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+#child {
+    width: 300px;
+    height: 300px;
+    padding: 10% 0;
+}
+</style>
+</head>
+ 
+<body>
+<div id="parent">
+    <div id="child">
+<button onclick="document.getElementById('sound1').play();"><audio id="sound1" src="http://108.16.28.114:5901/stream/swyh.mp3" preload="auto"></audio><img src="Images/Logo.png">
+</div>
+    </div>
+</body>
+</html>
