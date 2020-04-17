@@ -3,10 +3,14 @@
         <head> 
 		<meta charset="UTF-8">
         </head> 
-		<body>
-		<?php
+		<body class="page_bg">
+		IP: <?php
     $ip = file_get_contents('https://ip.seeip.org');
     echo "My public IP address is: " . $ip;
 ?>
+Hello, today is <?php echo date('l, F jS, Y'); ?>.
+<?php
+echo "My first PHP script!";
+?> 
 </body>
     </html>
