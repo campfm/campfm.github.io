@@ -11,10 +11,12 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 
 <style>
 body {
     background-color: #000000;
+    font-family: 'Playfair Display', serif;font-size: 50px;color: rgb(64,64,64);font-style:italic;
 }
 button {
     background-color: Transparent;
@@ -32,20 +34,77 @@ button {
     justify-content: center;
     padding: 5% 0;
 }
+#parenttest
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0;
+}
 #child {
     width: 300px;
     height: 300px;
     padding: 10% 0;
 }
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
 </style>
 </head>
 <body>
-<div id="parent">
-    <div id="child">
+<div id="parenttest">
 <button onclick="document.getElementById('sound1').play();"><audio autoplay id="sound1" preload="auto"><source src="http://96.245.196.151:59275/stream/swyh.mp3"></audio><audio id="sound2" preload="auto"><source src="Hold.mp3"></audio><img src="Images/Logo.png">
 </button>
 </div>
-    </div>
-    <p>Beach vibes</p>
+        <div class="fade-in" align="center">A BEACH VIBE</div>
 </body>
 </html>
